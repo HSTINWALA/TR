@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/popup.css" />
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <div class="col-xl-10 col-lg-11 login-container">
                 <div class="row">
                     <div class="col-lg-7 img-box">
-                        <img src="../assets/img/img2.png" alt="">
+                        <img src="./assets/images/img.png" alt="">
                     </div>
                     <div class="col-lg-5 no-padding">
                         <div class="login-box">
@@ -37,15 +38,24 @@
 
                              <div class="login-row row forrr no-margin">
                                 <p> <input type="checkbox" name="Remember"> Remember Me</p>
-                               <p><a href="">Forget Password?</a></p>
+                               <!-- <p><a href="">Forget Password?</a></p> -->
                             </div>
 
                              <div class="login-row btnroo row no-margin">
                                <button class="btn btn-primary btn-sm" name="login"><a href="../dashboard/index.html" style="color: white">Sign In</a></button>
                                <!-- <button class="btn btn-light  btn-sm"></button> -->
                             </div>
-                            <div class="login-row donroo row no-margin">
-                               <p>Dont have an Account ? <a href="">Sign Up</a></p>
+                            <div class="login-row donroo row no-margin"> 
+                                <p class="popup" onclick="myFunction()">Dont have an Account ? Sign Up
+                                         <span class="popuptext" id="myPopup">Please Contact to Administration for Username and Password.</span>
+                                </p>
+                                             <script>
+                 
+                                                 function myFunction() {
+                                                 var popup = document.getElementById("myPopup");
+                                                 popup.classList.toggle("show");}
+                                             </script>
+                                          <br>
                             </div>
                         </div>
                     </div>
@@ -53,9 +63,9 @@
             </div>
         </div>
     </div>
-    <div class="copyc">
+    <!-- <div class="copyc">
         <p>Designed by <a href="./index.html">Al-Tijaarat al-Raabehah - Taheri Mohallah</a></p>
-    </div>
+    </div> -->
 </body>
 
     <script src="assets/js/jquery-3.2.1.min.js"></script>
